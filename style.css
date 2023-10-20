@@ -1,0 +1,358 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #bae3f3, #f0f0f0);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+/* Estilo do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* Estilo do logotipo */
+.logo img {
+    max-height: 90px; /* Ajuste a altura do logotipo conforme necessário */
+}
+
+.banner{
+    background-color: #000000;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 0px 0;
+}
+
+/* Estilo do banner */
+.banner img {
+    max-width: 100%; /* Garante que o banner se ajuste ao tamanho da tela */
+}
+
+/* Estilo do menu */
+nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.menu a:hover{
+
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.cont-princ{
+    max-width: 100%;
+    margin-bottom:  5px;
+}
+
+.servicos{
+   width: 100%;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   overflow: hidden;
+}
+
+.box{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 600px;
+    margin-top: 20px;
+    
+}
+
+.servicos img{
+    margin: 10px;
+    max-width:65%;
+}
+
+#fotoSite{
+    width: 100%;
+    height: auto;
+}
+
+
+/* .servico {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px;
+}
+
+.servico h2 {
+    font-size: 24px;
+} */
+
+
+.item {
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 5px;
+    max-width: 350px;
+}
+
+.cursos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+
+.cursos img{
+    width: 350px;
+}
+
+.carga_horaria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 70px;
+    padding-bottom: 10px;
+}
+.carga_horaria img{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+   
+}
+
+#contato {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+#contato a {
+    display: block;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* Estilo do menu responsivo */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        
+    }
+
+    .menu-toggle:hover {
+        text-decoration: underline;
+
+        
+    }
+
+    .menu a{
+font-size: small;  
+  }
+  .box{
+    display: contents;
+    width: 100%;
+    
+    box-sizing: border-box;
+    padding: 20px;
+    height: 600px;
+    margin-top: 20px;
+    margin: 15px;
+    
+}
+}
+
+.cursos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.cursos img{
+    width: 350px;
+}
+
+.item {
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 5px;
+    max-width: 350px;
+}
+
+.box a{
+    background-color:green ;
+    color: #000000;
+    
+}
+
+h2{text-align: center;
+}
+
+p{
+    margin: 10px;
+}
+.box a{
+   display: flex;
+   padding-left: 150px;
+   padding-right: 0px;
+   color: #bae3f3;
+   background-color: #fcfbfb00;
+   align-items: center;
+    
+}
+
+.rodape{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+@media (max-width: 1250px) {
+    .cursos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .cursos {
+        display: flex;
+        flex-direction: row;
+        margin: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    .container ul{
+        display: none;
+    } 
+    /* #banner{
+        display: none;
+    }    */
+    .container img{
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        height: auto;
+    } 
+    .container h1{
+       display: none;
+    } 
+
+    
+
+    
+   
+
+}
