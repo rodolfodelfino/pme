@@ -92,6 +92,8 @@ nav {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
    
 }
 
@@ -268,6 +270,15 @@ font-size: small;
     margin: 15px;
     
 }
+
+.saiba{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+   
+}
 }
 
 .cursos {
@@ -325,6 +336,15 @@ p{
     width: 100%;
 }
 
+.saiba{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+   
+}
+
 @media (max-width: 1250px) {
     .cursos {
     display: grid;
@@ -333,6 +353,15 @@ p{
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    }
+
+    .saiba{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+       
     }
 
 }
@@ -362,7 +391,14 @@ p{
        display: none;
     } 
 
-    
+    .saiba{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+       
+    } 
 
     
    
