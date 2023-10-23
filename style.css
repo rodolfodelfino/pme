@@ -178,9 +178,9 @@ h1{
     padding-left: 70px;
     padding-bottom: 10px;
 }
-.carga_horaria img{
-    width: 20px;
-    height: 20px;
+.carga_horaria  img{
+    max-width: 25px;
+    height: 25px;
     padding: 5px;
    
 }
