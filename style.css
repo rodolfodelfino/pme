@@ -88,6 +88,11 @@ nav {
 
 }
 
+a{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
 .saiba{
     display: flex;
     margin-left: auto;
@@ -103,10 +108,15 @@ nav {
 }
 
 .servicos{
-   width: 100%;
+   max-width:100%;
    margin-bottom: 20px;
    margin-top: 20px;
    overflow: hidden;
+   background-color: #f2f2f2ea;
+   border: 1px solid black;
+   margin: 10px;
+   box-shadow: 10px 5px 5px black;
+   border-radius: 5px;
 }
 
 .box{
@@ -122,6 +132,7 @@ nav {
 .servicos img{
     margin: 10px;
     max-width:65%;
+    
 }
 
 #fotoSite{
@@ -279,6 +290,11 @@ font-size: small;
     margin-bottom: 0px;
    
 }
+
+a{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
 }
 
 .cursos {
@@ -362,6 +378,10 @@ p{
         padding-bottom: 0px;
         margin-bottom: 0px;
        
+    }
+    a{
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     }
 
 }
